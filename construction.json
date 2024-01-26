@@ -1,0 +1,10 @@
+[{"pivot": 0, "base": [50, 70, 115], "attitude": [70, 25, 20]},
+ {"pivot": 0, "base": [75, 47.5, 90], "attitude": [20, 70, 25]},
+ {"pivot": 0, "base": [0, 0, 0], "attitude": [70, 25, 20]},
+ {"pivot": 0, "base": [70, 0, 0], "attitude": [25, 70, 20]},
+ {"pivot": 90, "base": [95, 70, 0], "attitude": [25, 70, 20]},
+ {"pivot": 0, "base": [0, 25, 0], "attitude": [25, 70, 20]},
+ {"pivot": 0, "base": [0, 0, 20], "attitude": [20, 25, 70]},
+ {"pivot": 0, "base": [75, 0, 20], "attitude": [20, 25, 70]},
+ {"pivot": 0, "base": [75, 70, 20], "attitude": [20, 25, 70]},
+ {"pivot": 0, "base": [0, 70, 20], "attitude": [20, 25, 70]}]

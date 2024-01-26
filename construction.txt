@@ -1,0 +1,26 @@
+Explication de l'exemple de fichier de spécification de construction
+(construction.json). Le fichier est un fichier json, il se lit avec
+l'api json de python. Par exemple de la façon suivante:
+
+with open('construction.json') as json_data:
+    kapla_list = json.load(json_data)
+
+Le fichier de spécification de la construction est composé d'une liste
+de kapla.
+
+Chaque Kapla est défini de la façon suivante:
+
+{"pivot": 90, "base": [95, 70, 0], "attitude": [25, 70, 20]}
+
+Le principe de ces données est le suivant: le kapla est un
+parallélépipède rectangle de côtés 25mm x 20mm x 70mm. On définit sa
+position en prenant un point O de base ("base"). Puis un repère direct
+(Ox,Oy,Oz) 3D d'origine base. La position de ce repère est défini par:
+(Ox,Oy) est un plan horizontal (passant par O). L'orientation de Ox
+par rapport à une direction fixe (du monde) est donnée par le
+paramètre "pivot" donné en degré dans le sens direct (de Ox vers
+Oy). Oz est toujours vertical orienté vers le haut. La paramètre
+"attitude" positionne le Kapla dans ce repère. Ici [25,70,20] indique
+que l'arête du Kapla de longueur 25mm est positionnée le long de Ox,
+l'arête de longueur 70mm est le long de Oy et l'arête de longueur 20mm
+est vertical.
